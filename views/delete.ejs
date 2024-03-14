@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+<div class="forma-div">
+   <form class="form" id="form1" action="/delete" method="POST">
+     
+      <h2 class="display-5 fst-italic"><%= currentPost2.title %></h2>
+      <h5 class="fst-italic">by <%= currentPost2.author %></h5>
+      <p class="lead my-3"><%= currentPost2.article %></p>
+     
+     
+     <div class="submit">
+       <input name="delete" type="submit" value="DELETE POST" id="btn-blue"/>
+     </div>
+   </form>
+ </div>
+
+
+<%- include("partials/footer.ejs") %>
+
+</body>
+</main>
+
+</html>

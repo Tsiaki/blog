@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+
+<div class="forma-div">
+   <form class="form" id="form1" action="/edit" method="POST">
+     
+     <p class="name">
+       <input name="editTitle" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="<%= currentPost2.title %>" id="name" />
+     </p>
+     
+     <p class="author">
+       <input name="editAuthor" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="<%= currentPost2.author %>" />
+     </p>
+     
+     <p class="text">
+       <textarea name="editArticle" type="text" class="validate[required,length[6,300]] feedback-input " id="article" placeholder="<%= currentPost2.article %>"></textarea>
+     </p>
+     
+     
+     <div class="submit">
+       <input name="edit" type="submit" value="EDIT POST" id="btn-blue"/>
+     </div>
+   </form>
+ </div>
+
+
+<%- include("partials/footer.ejs") %>
+
+</body>
+</main>
+
+</html>

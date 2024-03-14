@@ -1,0 +1,27 @@
+
+
+
+<%- include("partials/header.ejs") %>
+
+<div class=" p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    
+      <h2 class="display-5 fst-italic"><%= currentPost.title %></h2>
+      <h5 class="fst-italic">by <%= currentPost.author %></h5>
+      <p class="lead my-3"><%= currentPost.article %></p>
+    
+</div> 
+
+<ul class="nav nav-pills">
+  <li class="nav-item"><a href="/edit/<%= currentPost.title%>" class="nav-link2" aria-current="page">Edit Post</a></li>
+  <li class="nav-item"><a href="/delete/<%= currentPost.title%>" class="nav-link2" aria-current="page">Delete Post</a></li>
+</ul>
+
+
+
+
+<%- include("partials/footer.ejs") %>
+
+</body>
+</main>
+
+</html>

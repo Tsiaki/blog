@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+ <div class="">
+    <% posts.forEach((post)=>{ %>
+           <div class="postStyle">
+            <h3><a href="poster/<%= post.title%>" class="text-body-emphasis fw-bold"><%= post.title%></a></h3>
+                <p>by <%= post.author %></p>
+                <p><%= post.article %></p>
+           </div>
+    <% }) %>
+ <div>
+
+<%- include("partials/footer.ejs") %>
+  
+</body>
+</main>
+
+</html>
